@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM alpine:3.14.3
 RUN wget http://dl-cdn.alpinelinux.org/alpine/v3.9/main/x86_64/libvncserver-0.9.11-r3.apk
 RUN apk add  libvncserver-0.9.11-r3.apk
 # I know this is cheating a bit...
