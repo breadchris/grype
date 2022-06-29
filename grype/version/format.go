@@ -75,6 +75,8 @@ func FormatFromPkgType(t pkg.Type) Format {
 		format = PythonFormat
 	case pkg.KbPkg:
 		format = KBFormat
+	case pkg.JavaPkg, pkg.NpmPkg:
+		format = SemanticFormat
 	default:
 		format = UnknownFormat
 	}
